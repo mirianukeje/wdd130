@@ -1,10 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-background-color: #f06;
+    --heading-text-color: #333;
+    --heading-font: 'Montserrat' , Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0/ 0.1);
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: white;  
     display: block;
     padding: 20px;
 }
@@ -14,6 +28,7 @@ h1 {
 }
 
 img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -43,9 +58,18 @@ aside img {
 p {
     padding: 0;
 }
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 } 
- 
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
