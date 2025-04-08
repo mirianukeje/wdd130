@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take this quick rafting-themed HTML and CSS quiz for WDD 130. Test your knowledge and share your love for rafting!">
+    <meta name="author" content="Olaniyi Bello">
+    <title>WDD 130 | Mirian Ukeje | HTML Form – Rafting Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+<header>
+  <h1>WDD 130 | Mirian Ukeje | Rafting Quiz – HTML Form</h1>
+</header>
+<main>
+  <form>
+    <fieldset>
+      <legend>Splash White Water Rafting Quiz</legend>
+
+      <div class="form-item">
+        <label for="q1">1. What is your full name?</label>
+        <input type="text" id="q1" name="q1">
+      </div>
+      
+      <div class="form-item">
+        <label for="q2">2. Share a short story of your dream white water rafting adventure:</label>
+        <textarea id="q2" name="q2" rows="4"></textarea>
+      </div>
+
+      <div class="form-item">
+        <label for="q3">3. Which of our guided rafting tours sounds most exciting to you?</label>
+        <select id="q3" name="q3">
+          <option value="" selected disabled>Choose One ...</option>
+          <option value="family-fun">Family Fun Rapids Tour</option>
+          <option value="extreme-thrill">Extreme Thrill Adventure</option>
+          <option value="sunset-float">Sunset Float and Scenic Tour</option>
+          <option value="corporate-day">Corporate Team-Building Raft Day</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label for="q4">4. On a scale from 1 to 10, how likely are you to recommend Splash to a friend?</label>
+        <input type="number" id="q4" name="q4" min="1" max="10">
+      </div>
+    </fieldset>
+
+    <button type="submit">Submit Quiz</button>
+  </form>
+</main>
+<footer>
+  <p>©2025 | Rafting Quiz – HTML Form Activity | Mirian Ukeje</p>
+</footer>
+</body>
+</html>

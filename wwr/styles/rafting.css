@@ -56,8 +56,8 @@ header img {
 }
 
 
-h1,
-h2 {
+h1,h2,
+h3 {
   font-family: var(--heading-font);
   color: var(--primary-color);
   margin-top: 2rem;
@@ -162,12 +162,10 @@ p {
 
 }
 
-
 .adventure h2 {
   text-align: center;
   margin-top: 0rem;
 }
-
 
 .images {
   display: grid;
@@ -219,3 +217,143 @@ footer {
   background-color: #ddd9e3;
   border: 1px solid #22223B;
 }
+
+footer a {
+  color: #333;
+}
+
+/* contact section */
+
+.contact-info, .employee, .contact-form, h2 h3 {
+  padding: 1rem;
+  text-align: center;
+  color: var(--primary-color)
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.adventure h2 {
+  text-align: center;
+  margin-top: 0rem;
+}
+
+.contact-details {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  /* gap: 1.5rem; */
+}
+
+.contact-details p {
+  margin-bottom: 0.5rem;
+}
+
+/* employee section */
+
+.employee-profiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.employee-profiles figure {
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.employee-profiles figcaption {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* form section */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.form-item {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-item label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+fieldset.form-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+fieldset.form-item legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+fieldset.form-item label {
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  display: block;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.checkbox-group label {
+  margin: 0;
+  padding-left: 0.5rem;
+  line-height: 1;
+}
+
+/* Button Styles */
+button {
+  background-color: #032045;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #283593;
+}
+

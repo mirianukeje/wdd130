@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lato', 'Oswald', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    background-color: #f0f8f7;
+    padding: 2rem;
+  }
+  
+  
+  header, footer {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 1rem auto;
+  }
+  
+  h1 {
+    font-size: 1.6em;
+    color: navy;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    font-size: 0.9em;
+    color: #333;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  legend {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: navy;
+    margin-bottom: 1rem;
+  }
+  
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  input, select, textarea {
+    padding: 0.6rem;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    background-color: #fdfdfd;
+    width: 100%;
+  }
+  
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: navy;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: rgb(67, 67, 143);
+  }
+  
