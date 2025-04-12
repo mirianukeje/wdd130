@@ -97,7 +97,7 @@ p {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   text-align: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 
 .hero article {
@@ -109,6 +109,26 @@ p {
   color: white;
   padding: 1rem;
   border-radius: 10px;
+}
+
+.hero article h2{
+  position: absolute;
+  top: 20px;
+  left: 0;
+ /*bottom: 60px;*/
+  /* right: 20px; */
+  background-color: #032045;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.hero-home article p {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  color: white;
+  width: 90%;
 }
 
 .hero article img {
@@ -357,3 +377,223 @@ button:hover {
   background-color: #283593;
 }
 
+/* Homepage */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.profile-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-card figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+}
+
+.caption-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.caption-content .text .name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.caption-content .text .status {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+/* contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contact-form h2 {
+  margin-bottom: 1rem;
+}
+
+/* Trips Hero - Used in trips.html */
+.hero-trips {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero-trips img {
+  display: block;
+  width: 100%;   
+  height: auto;
+}
+
+.hero-trips article {
+  position: absolute;
+  bottom: 5%;
+  left: 10px;
+  background-color: #032045;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 420px;
+}
+
+.hero-trips h1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+}
+
+
+.hero-trips article h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: white;
+}
+
+.hero-trips article p {
+  color: white;
+  font-size: 14px;
+}
+
+/* hero-contact */
+.hero-contact {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero-contact h1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+}
+
+.hero-contact article {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  background-color: #032045;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 420px;
+}
+
+
+.hero-contact article h2 {
+  margin-top: 0;
+  /* font-size: 18px; */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero-contact article p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  /* color: var(--primary-color); */
+  color: #032045;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent2-color);
+}
+
+.button-hero-home {
+  /* text-align: center; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trip-summary {
+  padding: 2rem 1rem;
+  background-color: #f8f8f8;
+  margin-top: 2rem;
+}
+
+.trip-summary h2 {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.trip-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.trip-summary thead {
+  background-color: #e5d9f2;
+  color: #000;
+  font-weight: bold;
+}
+
+.trip-summary th,
+.trip-summary td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: top;
+}
+
+.trip-summary tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.trip-summary tr:hover {
+  background-color: #f1f1f1;
+}
