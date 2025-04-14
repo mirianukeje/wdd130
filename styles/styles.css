@@ -2,61 +2,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-nav a {
-    color: white;  
+  }
+  
+  :root {
+    --primary-color: darkblue;
+    --text-color: white;
+    --heading-color: darkblue;
+    --aside-bg: #eee;
+    --aside-text: #333;
+    --border-color: black;
+    --box-shadow: 0 0 30px gray;
+    --main-max-width: 840px;
+    --aside-width: 20rem;
+    --aside-border: 1px solid rgb(0 0 0 / 0.2);
+    --footer-border: 1px solid #000;
+  }
+  
+  nav {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  nav a {
+    color: var(--text-color, white);
+    background-color: transparent;
     display: block;
-    padding: 20px;
-}
-
-h1 {
-    color: darkblue;
-}
-
-img {
-    float: right;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  h1 {
+    color: var(--heading-color, darkblue);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-main {
-    max-width: 840px;
-}    
-
-aside {
-    width: 20rem;
+    box-shadow: var(--box-shadow);
+    float: right;
+    margin: 0 1rem 1rem 1rem;
+  }
+  
+  p {
+    padding: 0;
+    margin: 10px;
+  }
+  
+  .grid {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    max-width: var(--main-max-width);
+    margin: 0 auto;
+  }
+  
+  main {
+    grid-column: 2 / 3;
     margin: 1rem;
-    border: 1px solid rgb( 0 0 0/0.2);/* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
- 
-aside img {
+  }
+  
+  aside {
+    /* grid-column: 1 / 2; */
+    grid-row: 1;
+    width: var(--aside-width);
+    position: relative;
+    background-color: var(--aside-bg, #eee);
+    color: var(--aside-text, #333);
+  }
+  
+  aside img {
+    display: block;
+    margin: 1rem auto;
     width: 200px;
     height: auto;
-}
-
-p {
-    padding: 0;
-}
-
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+  }
+  
+  aside h2 {
+    position: absolute;
+    top: 7%;
+    left: 25%;
+  }
+  
+  footer {
+    border-top: var(--footer-border);
     text-align: center;
-} 
-/* Class Selectors */
-
-.box {
+    max-width: var(--main-max-width);
+    margin: 0 auto;
+    /* background-color: #f0f0f0; */
+    color: #000;
+  }
+  
+  header, footer, .grid {
+    margin: 0 auto;
+    max-width: 840px;
+  }
+  
+  .box {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
-}
+  }
