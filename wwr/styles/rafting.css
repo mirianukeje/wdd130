@@ -116,8 +116,6 @@ p {
   position: absolute;
   top: 20px;
   left: 0;
-  /*bottom: 60px;*/
-  /* right: 20px; */
   background-color: #032045;
   color: white;
   padding: 1rem;
@@ -195,6 +193,12 @@ p {
 .hero-contact {
   position: relative;
   margin-bottom: 2rem;
+}
+
+.hero-contact img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-contact h1 {
