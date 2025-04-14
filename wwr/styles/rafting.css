@@ -56,7 +56,8 @@ header img {
 }
 
 
-h1,h2,
+h1,
+h2,
 h3 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -92,12 +93,12 @@ p {
   position: absolute;
   top: 20px;
   left: 0;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   text-align: center;
   width: 100%;
-  /*background-color: rgba(0, 0, 0, 0.5);*/
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero article {
@@ -111,11 +112,11 @@ p {
   border-radius: 10px;
 }
 
-.hero article h2{
+.hero article h2 {
   position: absolute;
   top: 20px;
   left: 0;
- /*bottom: 60px;*/
+  /*bottom: 60px;*/
   /* right: 20px; */
   background-color: #032045;
   color: white;
@@ -144,6 +145,96 @@ p {
   /* Lighter color for better contrast */
 }
 
+/* Trips Hero - Used in trips.html */
+.hero-trips {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero-trips img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-trips article {
+  position: absolute;
+  bottom: 5%;
+  left: 10px;
+  background-color: #032045;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 420px;
+}
+
+.hero-trips h1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 2.8rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.hero-trips article h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: white;
+}
+
+.hero-trips article p {
+  color: white;
+  font-size: 14px;
+}
+
+/* hero-contact */
+.hero-contact {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero-contact h1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-size: 2.8rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-contact article {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  background-color: #032045;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 420px;
+}
+
+
+.hero-contact article h2 {
+  margin-top: 0;
+  /* font-size: 18px; */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero-contact article p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .history {
   /* background-color: var(--secondary-color); */
   padding: 1rem;
@@ -157,7 +248,8 @@ p {
   margin-bottom: -1rem;
 }
 
-.history-item1, .history-item3 {
+.history-item1,
+.history-item3 {
   text-align: left;
   margin-left: 1rem;
 }
@@ -244,7 +336,10 @@ footer a {
 
 /* contact section */
 
-.contact-info, .employee, .contact-form, h2 h3 {
+.contact-info,
+.employee,
+.contact-form,
+h2 h3 {
   padding: 1rem;
   text-align: center;
   color: var(--primary-color)
@@ -437,96 +532,9 @@ button:hover {
   justify-content: center;
   margin-top: 2rem;
 }
+
 .contact-form h2 {
   margin-bottom: 1rem;
-}
-
-/* Trips Hero - Used in trips.html */
-.hero-trips {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.hero-trips img {
-  display: block;
-  width: 100%;   
-  height: auto;
-}
-
-.hero-trips article {
-  position: absolute;
-  bottom: 5%;
-  left: 10px;
-  background-color: #032045;
-  padding: 1rem;
-  border-radius: 5px;
-  max-width: 420px;
-}
-
-.hero-trips h1 {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-  text-align: center;
-  width: 100%;
-}
-
-
-.hero-trips article h2 {
-  margin-top: 0;
-  font-size: 18px;
-  color: white;
-}
-
-.hero-trips article p {
-  color: white;
-  font-size: 14px;
-}
-
-/* hero-contact */
-.hero-contact {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.hero-contact h1 {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-  text-align: center;
-  width: 100%;
-}
-
-.hero-contact article {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  background-color: #032045;
-  padding: 1rem;
-  border-radius: 5px;
-  max-width: 420px;
-}
-
-
-.hero-contact article h2 {
-  margin-top: 0;
-  /* font-size: 18px; */
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.hero-contact article p {
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 1rem;
 }
 
 /* Buttons */
